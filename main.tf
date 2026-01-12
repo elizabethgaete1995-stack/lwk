@@ -24,7 +24,7 @@ module "tags" {
 ## Locals
 # Define variables for local scope
 locals {
-  #regions         = module.azure_regions.regions
+  regions         = var.azure_regions && (var.azure_regions != null || (var.azure_regions != null && local.rsg_lwk != null))
   geo_region = lookup(local.regions, local.location)
   mds_lwk_enabled            = var.analytics_diagnostic_monitor_enabled && (var.analytics_diagnostic_monitor_lwk_id != null || (var.analytics_diagnostic_monitor_lwk_name != null && local.rsg_lwk != null))
   mds_sta_enabled            = var.analytics_diagnostic_monitor_enabled && (var.analytics_diagnostic_monitor_sta_id != null || (var.analytics_diagnostic_monitor_sta_name != null && var.analytics_diagnostic_monitor_sta_rsg != null))
