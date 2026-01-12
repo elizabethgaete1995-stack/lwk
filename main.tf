@@ -1,8 +1,8 @@
 ## Modules
 # Call Regions Module
-module "azure_regions" {
-  source  = "../../Misc/regions"
-}
+#module "azure_regions" {
+ # source  = "../../Misc/regions"
+#}
 /*
 # Call Tags Module
 module "tags" {
