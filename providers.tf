@@ -12,7 +12,8 @@ provider "azurerm" {
   subscription_id = "ef0a94be-5750-4ef8-944b-1bbc0cdda800"
   features {}
   skip_provider_registration = "true"
-  storage_use_azuread        = true
+  storage_use_azuread        = false
   use_msi = true  # Solo descomenta si ejecutas en Azure con Managed Identity habilitada  
 
 }  
+
