@@ -6,8 +6,8 @@ rsg_name       = "rg-poc-test-001"
 // LWK
 sku_lwk_name   = "PerGB2018"
 
-analytics_diagnostic_monitor_enabled = false
-analytics_diagnostic_monitor_name    = "lwk-poc-dev-chl-001-adm"
+#analytics_diagnostic_monitor_enabled = false
+#analytics_diagnostic_monitor_name    = "lwk-poc-dev-chl-001-adm"
 
 
 // NAMING VARIABLES
